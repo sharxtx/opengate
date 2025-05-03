@@ -1,0 +1,54 @@
+body {
+  width: 300px;
+  margin: 0;
+  padding: 15px;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  color: #2d3748;
+  font-size: 18px;
+  margin: 0 0 10px 0;
+}
+
+p {
+  color: #718096;
+  margin: 0 0 15px 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+#yes {
+  background: #4CAF50;
+  color: white;
+}
+
+#yes:hover {
+  background: #45a049;
+}
+
+#no {
+  background: #f0f0f0;
+  color: #2d3748;
+}
+
+#no:hover {
+  background: #e0e0e0;
+}

@@ -5,11 +5,18 @@
     "permissions": [
         "activeTab",
         "scripting",
-        "storage",
-        "tabs"
+        "tabs",
+        "storage"
+    ],
+    "host_permissions": [
+        "*://*.medium.com/*"
     ],
     "action": {
-        "default_popup": "popup/modal.html"
+        "default_title": "Freedium",
+        "default_popup": "popup/popup.html",
+        "default_icon": {
+            "128": "icon.png"
+        }
     },
     "background": {
         "service_worker": "background.js"
@@ -17,22 +24,14 @@
     "content_scripts": [
         {
             "matches": [
-                "<all_urls>"
+                "*://*.medium.com/*"
             ],
             "js": [
                 "content-script.js"
             ]
         }
     ],
-    "web_accessible_resources": [
-        {
-            "resources": [
-                "popup/modal.css",
-                "popup/modal.js"
-            ],
-            "matches": [
-                "*://*.medium.com/*"
-            ]
-        }
-    ]
+    "icons": {
+        "128": "icon.png"
+    }
 }
