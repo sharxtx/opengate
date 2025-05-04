@@ -1,9 +1,64 @@
 <!DOCTYPE html>
-<html>
-<body>
-  <p>Navigate to freedium.com?</p>
-  <button id="yes">Yes</button>
-  <button id="no">No</button>
-  <script src="modal.js"></script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Open Gate – Medium Unlocker</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #212121;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #333;
+      }
+
+      .container {
+        background: #000000;
+        padding: 30px 25px;
+        text-align: center;
+        max-width: 400px;
+        width: 250px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        transition: transform 0.2s ease;
+      }
+
+      .container:hover {
+        transform: scale(1.02);
+      }
+
+      h2 {
+        margin-top: 0;
+        font-size: 1.6rem;
+        color: #ffffff;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 10px 0;
+        color: #bcbcbc;
+      }
+
+      .title {
+        font-weight: bold;
+        color: #81fe7c;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h2>Open Gate</h2>
+      <p>
+        This is a Chrome extension that allows users to read any Medium paid
+        article for free using Freedium.
+      </p>
+      <p class="title">
+        Just open any Medium paid article – the rest is automatic!
+      </p>
+    </main>
+  </body>
 </html>

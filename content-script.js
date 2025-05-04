@@ -6,7 +6,7 @@ if (document.querySelector(".meteredContent")) {
     modal.innerHTML = `
       <div id="freedium-modal">
         <div class="modal-content">
-          <p>Looks like this is a paid article. Do you want to read it for free on fre?</p>
+          <p>Looks like this is a paid article. Do you want to read it for free on freedium?</p>
           <button id="freedium-yes">Yes, free me!</button>
           <button id="freedium-no">No, thanks</button>
         </div>
